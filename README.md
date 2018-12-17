@@ -1,16 +1,33 @@
-# Node.js Cloudant Sample
-
-This application demonstrates how to use the Bluemix Cloudant NoSQL DB service.  It helps users organize their favorite files. The UI talks to a RESTful Express CRUD backend API.
-
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/nodejs-cloudant)
-
 ## Run the app locally
 
-1. [Install Node.js][]
-+ cd into this project's root directory
-+ Copy the value for the VCAP_SERVICES envirionment variable from the application running in Bluemix and paste it in a `vcap-local.json` file
-+ Run `npm install` to install the app's dependencies
-+ Run `npm start` to start the app
-+ Access the running app in a browser at <http://localhost:3000>
+Author: Ansley Lam
 
-[Install Node.js]: https://nodejs.org/en/download/
+1. To run the app locally, please ensure the following have been installed:
+
+Node.js - https://nodejs.org/en/download/
+Visual Studio Code -https://code.visualstudio.com/
+Githuh Desktop - https://desktop.github.com/
+
+2. Ensure Github Desktop has cloned the respository to your local drive. 
+ - Select File> Clone Repository
+ - Input URL (https://github.com/ansleydeakin/vistech-bcp-b)
+ 
+*Pretty straight forward, best practice is to pull first, apply changes and push. In this case, we will be pushing changes direct to Master branch
+
+3. Run Visual Studio Code
+ - Selecy "Open Folder"
+ - Open the local clone of the Github respository
+ - Select the cross at the bottom left of the screen
+ - Select "Terminal" option
+ - Type "npm install" *It will begin installing modules based on what has been specified in Package.json
+ - Type "cd server" to change the directory to "vistech-bcp-b\server"
+ - Type "npm start" to run the web server
+ 
+*Once completed, you'll be able to access the locally hosted web server via http://localhost:3000
+
+For Front-end Developer & UX/UI Designer
+ - Front-end related files can be found in the "vistech-bcp-b\public folder"
+ 
+For Back-end Developer 
+ - Back-end .js can be found in "vistech-bcp-b\server\server.js"
+ - MySQL DB can be access via MySQL Workbench with the provided credentials
